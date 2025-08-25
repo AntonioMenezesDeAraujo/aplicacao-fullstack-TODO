@@ -1,0 +1,23 @@
+<div class="background">
+  <div class="container">
+    <mat-card>
+      <h2 class="title">Login</h2>
+      <form (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Usuário</mat-label>
+          <input matInput [(ngModel)]="login" name="login" required />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Senha</mat-label>
+          <input matInput [(ngModel)]="senha" name="senha" type="password" required />
+        </mat-form-field>
+
+        <div class="actions">
+          <button mat-raised-button color="primary" type="submit">Entrar</button>
+          <button mat-button color="accent" type="button" (click)="goRegister()">Cadastrar</button>
+        </div>
+      </form>
+    </mat-card>
+  </div>
+</div>
